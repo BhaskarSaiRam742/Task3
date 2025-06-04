@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Anime Universe</title>
+  <link rel="stylesheet" href="Task3.css" />
+</head>
+<body>
+  <header>
+    <h1>Welcome to My Anime Universe</h1>
+  </header>
+
+  <div id="nav-buttons">
+    <button onclick="showSection('quiz')">Anime Quiz</button>
+    <button onclick="showSection('weather')">Weather Info</button>
+    <button onclick="showSection('joke')">Jokes</button>
+  </div>
+
+  <section id="quiz" class="content-section fade-section">
+    <h2>Anime Quiz</h2>
+    <div id="quiz-container"></div>
+    <p id="quiz-result"></p>
+  </section>
+
+  <section id="weather" class="content-section fade-section">
+    <h2>Live Weather Updates</h2>
+    <input type="text" id="location-input" placeholder="Enter location (e.g., Tokyo)">
+    <button onclick="fetchWeather()">Get Weather</button>
+    <div id="weather-info"></div>
+  </section>
+
+  <section id="joke" class="content-section fade-section">
+    <h2>Time for a Joke</h2>
+    <div id="joke-content"></div>
+    <button onclick="fetchJoke()">Get Joke</button>
+  </section>
+
+  <script src="Task3.js"></script>
+</body>
+</html>
